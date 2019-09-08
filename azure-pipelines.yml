@@ -3,7 +3,9 @@ pool:
   demands:
     - npm
 
-steps:
+stegit add azure-pipelines.yml
+git commit -m "Add build tasks"
+git push origin build-pipelineps:
 - task: DotNetCoreInstaller@0
   displayName: 'Use .NET Core SDK 2.1.505'
   inputs:
